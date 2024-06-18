@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>iO Academy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <script defer src="js/script.js"></script>
+</head>
+
+<body>
+  <header class="navigation">
+    
+    <nav class="links">
+      <span class="logo">Navbar</span>
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#">Blog</a>
+      <a class="nav-link" href="#">Contact</a>
+    </nav>
+
+    <form class="search">
+        <input type="search" placeholder="Search">
+        <input type="submit" value="Search" class="submit">
+    </form>
+  </header>
+
+  <section class="jumbotron">
+    <div class="container">
+      <h1>Hello, World!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget ipsum eget eros varius sollicitudin.</p>
+
+      <a class="button modal-toggle" href="#">Learn more</a>
+    </div>
+</section>
+
+  <div class="container">
+    <main class="columns">
+      <div class="column">
+        <h3>Heading</h3>
+        <p>Pellentesque luctus enim quis mattis hendrerit. Fusce quis nisi ex. Proin varius dui in nisl vulputate, sodales feugiat augue consectetur. Nullam semper nisl nunc, et porttitor nibh dignissim sed.</p>
+        <a class="button modal-toggle" href="#">Learn more</a>
+      </div>
+
+      <div class="column">
+        <h3>Heading</h3>
+        <p>Pellentesque luctus enim quis mattis hendrerit. Fusce quis nisi ex. Proin varius dui in nisl vulputate, sodales feugiat augue consectetur. Nullam semper nisl nunc, et porttitor nibh dignissim sed.</p>
+        <a class="button modal-toggle" href="#">Learn more</a>
+      </div>
+
+      <div class="column">
+        <h3>Heading</h3>
+        <p>Pellentesque luctus enim quis mattis hendrerit. Fusce quis nisi ex. Proin varius dui in nisl vulputate, sodales feugiat augue consectetur. Nullam semper nisl nunc, et porttitor nibh dignissim sed.</p>
+        <a class="button modal-toggle" href="#">Learn more</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; Copyright 2022</p>
+    </footer>
+  </div>
+  
+<div class="modal">
+    <header>
+        <h2>Get in touch</h2>
+        <span><i class="fas fa-window-close modal-toggle"></i></span>
+    </header>
+    <p>Fill out the form below and we will get in touch.</p>
+    <p><small>* required</small></p>
+    <form>
+        <div class="form-group">
+            <label for="name">Name<span>*</span></label>
+            <input type="text" id="name" name="name">
+            <small id="nameError">Minimum of 5 characters</small>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email<span>*</span></label>
+            <input type="email" id="email" name="email">
+            <small id="emailError">Maximum of 255 characters</small>
+        </div>
+
+        <div class="form-group">
+            <label for="reason">Reason for contacting us</label>
+            <textarea id="reason" name="reason" rows="4"></textarea>
+            <small id="reasonError">Minimum 50 characters, maximum of 500 characters</small>
+        </div>
+
+        <div class="form-group">
+            <label><input type="checkbox" id="terms" name="terms"> Please accept our Terms & Conditions<span>*</span></label>
+            <small id="termsError">This checbox must be ticked</small>
+        </div>
+
+        <input type="submit" value="Send" class="button" id="submit" disabled>
+
+    </form>
+</div>
+  
+  
+</body>
+
+</html>

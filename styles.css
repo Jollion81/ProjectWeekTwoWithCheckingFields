@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    font-family: helvetica;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  
+  h1 {
+    margin-top: 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #343a40;
+    color: white;
+    padding: 10px 25px;
+  }
+
+  .navigation .links {
+    padding-top: 2px;
+  }
+  
+  .logo {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  .nav-link:hover {
+    background-color: skyblue;
+  }
+  
+  .search {
+    text-align: right;
+  }
+
+  form .submit {
+    border: 1px solid #259b42;
+    border-radius: 5px;
+    padding: 2px 5px;
+    background: 0;
+    outline: 0;
+    color: #259b42;
+  }
+
+  .jumbotron {
+    background-color: #e8ecef;
+    padding: 80px 0; 
+    margin-bottom: 10px;
+  }
+  
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .button {
+    text-decoration: none;
+    color: white;
+    background-color: #037bff;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+  }
+  
+  .footer {
+    border-top: 1px solid black;
+    font-size: 15px;
+    padding: 10px 0;
+    margin-top: 60px;
+  }
+
+  .modal {
+    position: fixed;
+    width: 800px;
+    top: 50px;
+    right: calc(50% - 400px);
+    background: #ffffff;
+    padding: 25px;
+    box-shadow: 3px 3px 5px 0px #343a40;
+    display: none;
+  }
+
+  .modal.open {
+    display: block;
+  }
+
+  .modal header {
+    display: grid;
+    grid-template-columns: auto 15px;
+  }
+
+  .modal header span {
+    cursor: pointer;
+  }
+
+  .modal p small {
+    color: red;
+  }
+
+  .modal .form-group {
+    margin-bottom: 15px;
+  }
+
+  .modal .form-group label {
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  .modal .form-group label span {
+    color: red;
+  }
+
+  .modal .form-group input[type=text],
+  .modal .form-group input[type=email],
+  .modal .form-group textarea {
+    width: 100%;
+    padding: 5px 8px;
+    border-radius: 5px;
+  }
+
+  .modal .form-group small {
+    display: block;
+    margin-top: 3px;
+    font-style: italic;
+  }
+
+  .modal .form-group small.error {
+    color: red;
+  }
+
+  .modal .button:disabled {
+    background: grey;
+    color: #dddddd;
+  } 
